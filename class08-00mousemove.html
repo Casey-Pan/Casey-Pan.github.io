@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> 
+		<title>Event / Flow </title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+		.content {
+			display: flex;
+			flex-direction: row;
+			height: 100vh;
+		}
+
+		.column {
+			height: 100%;
+			width: 100%;
+			border: 1px solid red;
+			background-color: #cccccc;
+		}
+
+		.column.selected {
+			background-color: blueviolet;
+		}
+
+		</style>
+	</head>
+	<body>
+		<main class="content">
+			<div class="column" id="column-0"></div>
+			<div class="column" id="column-1"></div>
+			<div class="column" id="column-2"></div>
+			<div class="column" id="column-3"></div>
+		</main>
+
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-3.7.0.js"></script>	
+		<script type="text/javascript">
+			console.log("hello world");
+
+			var windowWidth = $(window).width();
+			console.log (windowWidth);
+
+			$(window).on("mousemove", function(evt){
+				var mouseX = evt.pageX;
+				var mouseY = evt.pageY;
+
+				var mouseStatus = mouseX + "," +mouseY;
+				console.log(mouseStatus);
+
+				$(".column.selected").removeClass("selected");
+
+				//finish this for homework!
+				if (mouseX> 0 && mouseX < windowWidth * (1/4)) {
+					console.log ("I'm in the first quarter");
+					$('#column-0').addClass("selected");
+				} else if (mouseX >= windowWidth * (1/4) && mouseX < windowWidth * (2/4)) {$('#column-1').addClass("selected");
+				} else if (mouseX >= windowWidth * (2/4) && mouseX < windowWidth * (3/4)) {$('#column-2').addClass("selected");
+				} else if (mouseX >= windowWidth * (3/4) && mouseX < windowWidth * (4/4)) {$('#column-3').addClass("selected");}
+
+			})
+		
+		</script>
+	</body>
+	</html>
