@@ -1,0 +1,160 @@
+* {
+  font-family: 'Cutive Mono', monospace;
+  color: rgb(200,240,250);
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+/* Styles for the entry page (index.html) */
+body.index {
+  background-image: url("images/00cover.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Styles for the information page (info.html) */
+body.info {
+  background-image: url("images/01coverDark.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar ul{
+  color: #C1CBD7;
+  text-decoration: noun;
+  background-color: #52658F;
+  overflow: hidden;
+}
+
+.navbar a{
+  padding: 15px 40px 5px 40px;
+  display: block;
+  text-align: center;
+  border-radius: 0px 15px;
+}
+
+.navbar a:hover{
+  text-decoration: underline;
+}
+
+.navbar li{
+  float: left;
+}
+
+h1 {
+  display: grid;
+  place-items: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 500px;
+  color: #52658F;
+}
+
+h3 {
+  font-size: 98%;
+}
+
+.video-container {
+  position: relative;
+  padding: 20px 5vw;
+  width: 100%;
+}
+
+p{
+	color: #1D2731;
+  padding:50px;
+  width:60%;
+  min-width: 20%;
+  float: center;
+}
+
+.interface-btn {
+	display:grid;
+	place-items:center;
+  font-size: 25px; 
+  background-color: #CDA34F; 
+  color: #FFFFFF; 
+  border:none;
+  border-radius: 8px; 
+  padding: 0px 10px;
+}
+
+button:hover{
+  background-color: #F0AB22;
+}
+
+html,body{
+	width: 100%;
+	height:100%;
+}
+
+#boxBG{
+  width:1355px;
+  height:862px;
+  background-color: rgba(244, 244, 244, 0.8);
+  border-radius: 0px 15px;
+  position: center;
+  top:162px;
+}
+
+.sectionBG{
+  background-position: center;
+  background-size: cover;
+}
+
+.galleryold{
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap:10px;
+}
+
+.Gallery{
+  display: flex;
+  gap: 10px;
+  border: 0px solid ;
+}
+
+.Gallery :hover{
+  border: 5px solid #52658F;
+}
+
+.Gallery img{
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+#Greeting{
+  width: 250px;
+  height:20px;
+  background: rgb(215,84,85);
+  font-size:15px;
+  text-align:center;
+  color: rgb(240,250,250);
+  order:0;
+  
+  animation:mySlide;
+  animation-duration: 8s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes mySlide{
+  from{margin-left: 100%}
+  to{margin-right: 0%}
+}
+
+@media screen and (max-width:600px){
+  aside, section, article{
+    width: 100%;
+  }
+}

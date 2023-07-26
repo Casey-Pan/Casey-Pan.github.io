@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Vertical Mat</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<form>
+
+			<fieldset>
+				<label>Color Option</label>
+				<select id="first-option" class="dropdown">
+					<option value="00">Yellow</option>
+					<option value="01">Beige</option>
+					<option value="02">Blue</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<label>Place</label>
+				<select id="second-option" class="dropdown">
+					<option value="00">Gallery</option>
+					<option value="01">Corridor</option>
+					<option value="02">Pavilion</option>
+				</select>
+			</fieldset>
+
+		</form>
+
+		<div class="ourput">
+			<img id="image-output" src="image/iterations/out256_00_00.jpg"/>
+		</div>
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-3.7.0.js"></script>
+		<script type="text/javascript">
+			$('.dropdown').on('change', function(){
+				//find the element that is selected
+				var firstOptionEl = $('#first-option').find("iption:selected");
+				var sectondOptionEl = $('#sectond-option').find("iption:selected");
+
+				//get the 'value'
+				var firstOptionSelected = firstOptionEl.attr('value');
+				var secondOptionSelected = secondOptionEl.attr('value');
+
+				var newImgUrlPrefix = 'images/iterations/out256';
+				var newImgUrlSuffix = '.jpg';
+				var newImgUrl = newImgUrlPrefix + firstOptionSelected + "_" +secondOptionSelected + newImgUrlSuffix;
+				console.log(newImgUrl);
+
+				$('#image-output').attr('src, newImgUrl');
+
+		</script>
+	</body>
