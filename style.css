@@ -1,9 +1,17 @@
 * {
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Inter', sans-serif;
   color: rgb(200,240,250);
   padding:0;
   margin:0;
   box-sizing: border-box;
+}
+
+:root{
+  --pure-white: #FFFFFF;
+  --paper-white: #F4F4F4;
+  --theme-blue: #C1CBD7;
+  --dark-blue: #52658F;
+  --accent-yellow: #CDA34F;
 }
 
 /* Styles for the entry page (index.html) */
@@ -53,13 +61,15 @@ body.info {
 h1 {
   display: grid;
   place-items: center;
-  font-family: 'Oswald', sans-serif;
-  font-size: 500px;
+  font-size: 100px;
   color: #52658F;
 }
 
 h3 {
-  font-size: 98%;
+  display: grid;
+  place-items: center;
+  font-size: 38px;
+  color: #52658F;
 }
 
 .video-container {
@@ -68,12 +78,13 @@ h3 {
   width: 100%;
 }
 
-p{
+p {
 	color: #1D2731;
   padding:50px;
   width:60%;
   min-width: 20%;
   float: center;
+  font-size: 18px;
 }
 
 .interface-btn {
@@ -101,7 +112,8 @@ html,body{
   height:862px;
   background-color: rgba(244, 244, 244, 0.8);
   border-radius: 0px 15px;
-  position: center;
+  display: grid;
+  place-items: center;
   top:162px;
 }
 
@@ -119,6 +131,7 @@ html,body{
 
 .Gallery{
   display: flex;
+  place-items: center;
   gap: 10px;
   border: 0px solid ;
 }
