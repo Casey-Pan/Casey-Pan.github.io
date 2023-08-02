@@ -122,6 +122,10 @@ html,body{
   background-size: cover;
 }
 
+.chunk-model {
+  hieght:500px;
+}
+
 .galleryold{
   display: grid;
   grid-template-columns:repeat(3, 1fr);
