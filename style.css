@@ -186,6 +186,10 @@ html,body{
   object-fit: cover;
 }
 
+.chunk-model{
+  width: 1000px;
+}
+
 #Greeting{
   width: 250px;
   height:20px;
