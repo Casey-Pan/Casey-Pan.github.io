@@ -159,16 +159,21 @@ html,body{
 
 .galleryold{
   display: grid;
+    display: flex;
+  place-items: center;
   grid-template-columns:repeat(3, 1fr);
   grid-auto-rows: minmax(100px, auto);
   grid-gap:10px;
 }
 
 .Gallery{
-  display: flex;
-  place-items: center;
+  display: grid;
+  grid-template-columns:repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
   gap: 10px;
-  border: 0px solid ;
+  border: 0px solid;
+  margin: 10%;
+  margin-right: 10%;
 }
 
 .Gallery img:hover{
@@ -176,10 +181,9 @@ html,body{
 }
 
 .Gallery img{
-  width: 1000px;
-  height: 600px;
+  width: 300px;
+  height: 200px;
   object-fit: cover;
-  display: none;
 }
 
 #Greeting{
