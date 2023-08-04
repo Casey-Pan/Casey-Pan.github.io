@@ -4,20 +4,23 @@
 		<title>Model Chunk 1</title>
 		<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+		<script type="text/javascript" src="script.js"></script>
 	</head>
 
 	<body>
 		<nav class="navbar">
 			<ul>
 				<div style="float: left;">
-					<li><a href="EntryPage.html">Main Page</a></li>
+					<li><a href="index.html">Main Page</a></li>
 					<li><a href="InfoPage.html">Project Information</a></li>
 					<li><a href="NavigationPage.html">Navigation</a></li>
 				</div>
 				
 				<div style="float: right;">
-					<li><a href="SectionPage1">Back to Section</a></li>
-					<li><a href="">Image Gallery of Chunk</a></li>
+					<li><a href="SectionPage1.html">Back to Section</a></li>
+					<li><a href="ImageGallery.html">Image Gallery of Chunk</a></li>
 				</div>
 				
 			</ul>
@@ -25,31 +28,27 @@
 
 		<main>
 			<div>
-				<model-viewer class="chunk-model" src="assets/text.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+				<model-viewer class="chunk-model" src="assets/Chunk1.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
 			    <div class="progress-bar hide" slot="progress-bar">
 			        <div class="update-bar"></div>
 			    </div>
 				</model-viewer>
-			</div>
 
 			<div class="Gallery">
-				<a href="ImageGallery.html">
-					<img src="images/C1-1_Courtyard.jpg">
+				<a href="images/C1-1_Entrance.jpg" data-fancybox data-caption="Coutyard image">
+				<img src="images/C1-1_Entrance.jpg" />
 				</a>
-				<a href="ImageGallery.html">
-					<img src="images/C1-2_Exhibition.jpg">
+				<a href="images/C1-2_Bridge.jpg" data-fancybox data-caption="Exhibition image">
+				<img src="images/C1-2_Bridge.jpg" />
 				</a>
-				<a href="ImageGallery.html">
-					<img src="images/C1-3_Exhibition.jpg">
+				<a href="images/C1-3_Courtyard.jpg" data-fancybox data-caption="Exhibition2 image">
+				<img src="images/C1-3_Courtyard.jpg" />
 				</a>
-				<a href="ImageGallery.html">
-					<img src="images/C1-4_Bridge.jpg">
-				</a>
+				<a href="images/C1-4_Studio.jpg" data-fancybox data-caption="Bridge image">
+				<img src="images/C1-4_Studio.jpg" />
+				</a>                
 			</div>
 		</main>
 
-		<footer>
-			
-		</footer>
 	</body>
 </html>

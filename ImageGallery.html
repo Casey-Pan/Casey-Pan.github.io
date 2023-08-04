@@ -2,12 +2,13 @@
 <html>
 	<head>
 		<title>Image Gallery 1</title>
-		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
 		<link
 		  rel="stylesheet"
-		  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+		  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
 		/>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
 	</head>
 
 	<body>
@@ -20,7 +21,7 @@
 				</div>
 				
 				<div style="float: right;">
-					<a href="">Back to Section</a>
+					<a href="SectionPage1.html">Back to Section</a>
 				</div>
 				
 			</ul>
@@ -28,14 +29,12 @@
 
 		<main>
 			<div class="Gallery">
-				<img src="images/C1-3_Exhibition.jpg">
-				<img src="images/C1-4_Bridge.jpg">
-				<a href="images/C1-1_Courtyard.jpg" data-fancybox data-caption="Coutyard image">
-				  <img src="images/C1-1_Courtyard.jpg" />
-				</a>
-				<a href="images/C1-2_Exhibition.jpg" data-fancybox data-caption="Exhibition image">
-				  <img src="images/C1-2_Exhibition.jpg" />
-				</a>				
+				<div class="f-carousel" id="myCarousel">
+				  <div img src="images/C1-1_Courtyard.jpg" class="f-carousel_slide">Courtyard</div>
+				  <div img src="images/C1-2_Exhibition.jpg" class="f-carousel_slide">Exhibition</div>
+				  <div img src="images/C1-4_Bridge.jpg" class="f-carousel_slide">Bridge</div>
+				</div>
+					<img src="images/RightArrow.png" class="next" alt="next">	
 			</div>
 		</main>
 
