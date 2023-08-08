@@ -61,22 +61,16 @@ body.info {
 
 h1 {
   text-align: center;
-  font-size: 100px;
+  font-size: 80px;
   color: #52658F;
-}
-
-.title {
-  color: rgba(244, 244, 244, 0.8);
-  font-size: 100px;
-  font-style: bold;
-  margin-bottom: -39px;
 }
 
 h3 {
   display: grid;
   place-items: center;
-  font-size: 38px;
+  font-size: 30px;
   color: #52658F;
+  font-weight: 50;
 }
 
 .subtitle {
@@ -92,13 +86,11 @@ h3 {
   width: 100%;
 }
 
-p, ol {
-	color: #1D2731;
-  padding:50px;
-  width:60%;
-  min-width: 20%;
-  float: center;
-  font-size: 18px;
+.center-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform: translate(0px, -110px);
 }
 
 .interface-btn {
@@ -108,8 +100,10 @@ p, ol {
   background-color: #CDA34F; 
   color: #FFFFFF; 
   border:none;
-  border-radius: 8px; 
-  padding: 0px 10px;
+  border-radius: 10px; 
+  padding: 5px 15px;
+  top:50%;
+  text-decoration: none;
 }
 
 .model-btn {
@@ -121,6 +115,8 @@ p, ol {
   border:none;
   border-radius: 8px; 
   padding: 0px 10px;
+  z-index: 2;
+  position: relative;
 }
 
 button:hover{
@@ -128,7 +124,7 @@ button:hover{
 }
 
 .model-btn button:hover{
-  background-color: #52658F;
+  background-color: #FFFFFF;
 }
 
 html,body{
@@ -136,16 +132,45 @@ html,body{
 	height:100%;
 }
 
+.textPg {
+  padding: 20%;
+}
+
+.title {
+  color: rgba(244, 244, 244, 0.8);
+  font-size: 100px;
+  font-style: bold;
+  margin-bottom: -39px;
+}
+
+.subtitle {
+  display: flex;
+  align-items: flext-end;
+  justify-content: right;
+}
+
 #boxBG{
   width:80%;
   max-width: 1355px;
-  height:862px;
+  height:760px;
   background-color: rgba(244, 244, 244, 0.8);
   border-radius: 15px 15px 0px 0px;
-  justify-content: center;
+  display: flex;
   align-items: center;
-  top:162px;
-  margin-left: 200px;
+  justify-content: center;
+  flex-direction: column;
+  top:60px;
+  margin: 0 auto;
+  position: relative;
+}
+
+p, dl {
+  color: #52658F;
+  padding:50px;
+  width:80%;
+  min-width: 20%;
+  font-size: 18px;
+  margin: 0;
 }
 
 .sectionBG{
@@ -153,8 +178,18 @@ html,body{
   background-size: cover;
 }
 
+.button-container {
+    position: absolute;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
 .chunk-model {
-  hieght:500px;
+  width:100%;
+  height: 50vh;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .galleryold{
@@ -184,6 +219,12 @@ html,body{
   width: 300px;
   height: 200px;
   object-fit: cover;
+}
+
+#myCarousel {
+  --f-carousel-slide-height: 60%;
+  --f-carousel-spacing: 10px;
+  height: 200px;
 }
 
 .chunk-model{
