@@ -1,6 +1,5 @@
 * {
   font-family: 'Inter', sans-serif;
-  color: rgb(200,240,250);
   padding:0;
   margin:0;
   box-sizing: border-box;
@@ -59,10 +58,23 @@ body.info {
   float: left;
 }
 
+header {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
 h1 {
   text-align: center;
   font-size: 80px;
   color: #52658F;
+}
+
+h1.title {
+  text-align: left;
 }
 
 h3 {
@@ -77,7 +89,6 @@ h3 {
   color: rgba(244, 244, 244, 0.8);
   font-style: bold;
   text-align: right;
-  margin-bottom: -39px;
 }
 
 .video-container {
@@ -143,30 +154,22 @@ html,body{
   margin-bottom: -39px;
 }
 
-.subtitle {
-  display: flex;
-  align-items: flext-end;
-  justify-content: right;
-}
-
 #boxBG{
   width:80%;
-  max-width: 1355px;
-  height:760px;
+  max-width: calc(100vw);
+  height: calc(100vh - 111px);
   background-color: rgba(244, 244, 244, 0.8);
   border-radius: 15px 15px 0px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  top:60px;
   margin: 0 auto;
   position: relative;
 }
 
 p, dl {
   color: #52658F;
-  padding:50px;
   width:80%;
   min-width: 20%;
   font-size: 18px;
@@ -194,7 +197,7 @@ p, dl {
 
 .galleryold{
   display: grid;
-    display: flex;
+  display: flex;
   place-items: center;
   grid-template-columns:repeat(3, 1fr);
   grid-auto-rows: minmax(100px, auto);
@@ -203,12 +206,11 @@ p, dl {
 
 .Gallery{
   display: grid;
-  grid-template-columns:repeat(4, 1fr);
+  grid-template-columns:repeat(5, 1fr);
   grid-auto-rows: minmax(100px, auto);
   gap: 10px;
   border: 0px solid;
-  margin: 10%;
-  margin-right: 10%;
+  margin: 0 10%;
 }
 
 .Gallery img:hover{

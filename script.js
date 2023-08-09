@@ -1,3 +1,4 @@
-Fancybox.bind("[data-fancybox]", {
+
+Fancybox.bind("[data-fancybox='gallery-a']", {
   // Your custom options
 });
