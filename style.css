@@ -132,6 +132,7 @@ h3 {
 
 button:hover{
   background-color: #F0AB22;
+  box-shadow: 0 2px 5px rgba(82, 101, 43, 0.8);
 }
 
 .model-btn button:hover{
@@ -166,6 +167,14 @@ html,body{
   flex-direction: column;
   margin: 0 auto;
   position: relative;
+}
+
+#boxBG img {
+  border-radius: 50%;
+}
+
+#boxBG img:hover {
+  box-shadow: 0 2px 5px rgba(82, 101, 43, 0.8);
 }
 
 p, dl {

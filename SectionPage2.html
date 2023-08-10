@@ -4,6 +4,11 @@
 		<title>SectionPage2</title>
 		<script src="https://cdn.tailwindcss.com"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script>
+		function showAlert() {
+			alert('This page is currently being updated, please go back.');
+		}
+		</script>
 	</head>
 
 	<body>
@@ -17,7 +22,7 @@
 				
 				<div style="float: right;">
 					<li><a href="SectionPage1.html">Walk Left</a></li>
-					<li><a href="SectionPage3.html">Walk Right</a></li>
+					<li><a onclick="showAlert();" href="javascript:void(0);">Walk Right</a></li>
 				</div>
 			</ul>
 		</nav>
